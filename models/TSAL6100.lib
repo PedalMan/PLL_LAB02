@@ -1,0 +1,20 @@
+* TSAL6100 infrared LED - approximate electrical model
+* Intended for circuit voltage/current simulation near 25 C.
+*
+* Typical datasheet targets:
+*   Forward voltage: 1.35 V at 100 mA
+*   Zero-bias junction capacitance: 40 pF
+*
+* IS, N and RS are estimated to fit that forward-voltage point.
+* VJ and M are assumed capacitance-shape parameters.
+* Optical output, optical switching time, reverse breakdown,
+* temperature behavior and maximum ratings are not modeled.
+
+.model TSAL6100_APPROX D(
++ IS=1.9e-11
++ N=2
++ RS=2
++ CJO=40p
++ VJ=0.75
++ M=0.33
++ )
