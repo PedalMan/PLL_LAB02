@@ -1148,6 +1148,272 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Oscilloscope"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.0254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "MES"
+				(at -3.302 1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Oscilloscope"
+				(at -3.302 -0.762 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Oscilloscope"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "oscilloscope"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Oscilloscope_0_0"
+				(polyline
+					(pts
+						(xy -1.778 0.508) (xy -1.905 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid -1.397 0.8874)
+					(end -1.016 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 0.508) (xy -0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.381 -0.8874)
+					(end -0.762 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0.254 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 0.508)
+					(mid 0.635 0.8874)
+					(end 1.016 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0.508) (xy 1.27 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.032 -0.508)
+					(mid 1.651 -0.8874)
+					(end 1.27 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -0.508) (xy 2.159 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Oscilloscope_0_1"
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 3.81) (xy 0.762 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 4.064) (xy 0.508 3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Oscilloscope_1_1"
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Potentiometer_Trim_US"
 			(pin_names
 				(offset 1.016)
@@ -2823,145 +3089,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VAA"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VAA"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VAA\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VAA_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VAA_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
 		(at 149.86 91.44)
@@ -3030,6 +3157,12 @@
 		(uuid "5af9d6dc-fbd4-496a-819c-167f5210603a")
 	)
 	(junction
+		(at 53.34 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "668159f7-e211-45eb-970d-d618a3a9e573")
+	)
+	(junction
 		(at 138.43 97.155)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3081,13 +3214,7 @@
 		(at 39.37 97.155)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b8599c44-9ec4-4e65-a12d-25908c258c0e")
-	)
-	(junction
-		(at 50.8 97.155)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa5f0bf3-c2ee-4bff-bcde-e5ddb906149a")
+		(uuid "c5343f7f-3581-4278-9d65-a7f9a2bc0b16")
 	)
 	(junction
 		(at 39.37 107.315)
@@ -3178,6 +3305,26 @@
 			(type default)
 		)
 		(uuid "15d26bef-cfd6-40d6-a61e-8e549f92026c")
+	)
+	(wire
+		(pts
+			(xy 39.37 97.155) (xy 53.34 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17934ffb-e7f2-49f1-b198-885a482985de")
+	)
+	(wire
+		(pts
+			(xy 53.34 97.155) (xy 66.04 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ab22d60-fe1d-4f2a-85c3-8ee4b858c527")
 	)
 	(wire
 		(pts
@@ -3321,16 +3468,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 107.315) (xy 50.8 107.315)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b2cc5d6-d73f-4a1a-82f9-21e4c453afd0")
-	)
-	(wire
-		(pts
 			(xy 115.57 110.49) (xy 115.57 118.11)
 		)
 		(stroke
@@ -3371,6 +3508,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 97.155) (xy 39.37 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "442d3c84-1d73-4690-97ca-3d10ba63b65e")
+	)
+	(wire
+		(pts
 			(xy 74.295 136.525) (xy 74.295 139.065)
 		)
 		(stroke
@@ -3401,13 +3548,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 103.505) (xy 50.8 107.315)
+			(xy 86.36 93.98) (xy 86.36 99.695)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5612427c-295d-42c8-b77a-b3a626a729be")
+		(uuid "55a52b7b-0214-41de-802b-0365ce0c2e7f")
 	)
 	(wire
 		(pts
@@ -3448,6 +3595,16 @@
 			(type default)
 		)
 		(uuid "61349a62-0278-45a9-b074-bb0dd3a8f83e")
+	)
+	(wire
+		(pts
+			(xy 106.045 118.11) (xy 115.57 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6149f85f-5ca7-49f0-8a5a-58e71a127402")
 	)
 	(wire
 		(pts
@@ -3508,16 +3665,6 @@
 			(type default)
 		)
 		(uuid "6c28a842-5f9b-400a-9ae0-81898e5cbaaf")
-	)
-	(wire
-		(pts
-			(xy 160.655 110.49) (xy 162.56 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fc451d6-0034-4f6b-9984-520b88c65d61")
 	)
 	(wire
 		(pts
@@ -3681,16 +3828,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 97.155) (xy 50.8 97.155)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9288933d-336e-44d4-b1e2-f490a954e8db")
-	)
-	(wire
-		(pts
 			(xy 208.915 102.235) (xy 217.805 102.235)
 		)
 		(stroke
@@ -3728,16 +3865,6 @@
 			(type default)
 		)
 		(uuid "9e03edcd-4a68-4300-b1d0-1132e81d4fd7")
-	)
-	(wire
-		(pts
-			(xy 109.22 118.11) (xy 115.57 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0587952-6f32-45c5-b253-55398e0a69a9")
 	)
 	(wire
 		(pts
@@ -3801,7 +3928,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 94.615) (xy 39.37 98.425)
+			(xy 39.37 94.615) (xy 39.37 97.155)
 		)
 		(stroke
 			(width 0)
@@ -3831,16 +3958,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 97.155) (xy 66.04 97.155)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b69ccb26-e399-4cfb-8e12-dd2d1deabba0")
-	)
-	(wire
-		(pts
 			(xy 193.04 93.98) (xy 205.105 93.98)
 		)
 		(stroke
@@ -3858,6 +3975,16 @@
 			(type default)
 		)
 		(uuid "b9592609-ae3b-44cb-93ed-4628898542e0")
+	)
+	(wire
+		(pts
+			(xy 196.215 108.585) (xy 205.105 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bacdd76f-f437-42fd-aeb4-9815cc2e949c")
 	)
 	(wire
 		(pts
@@ -3971,6 +4098,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 102.235) (xy 53.34 107.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9631de1-de17-4d65-8462-38b51959f485")
+	)
+	(wire
+		(pts
 			(xy 169.545 96.52) (xy 173.355 96.52)
 		)
 		(stroke
@@ -3981,6 +4118,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 107.315) (xy 53.34 107.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbe26a65-06ac-46ae-bc5a-6c0f5d51ac4f")
+	)
+	(wire
+		(pts
 			(xy 215.9 107.315) (xy 215.9 113.665)
 		)
 		(stroke
@@ -3988,6 +4135,16 @@
 			(type default)
 		)
 		(uuid "cf4a3663-b7a5-4a30-b68d-d7a99a7410f5")
+	)
+	(wire
+		(pts
+			(xy 158.115 110.49) (xy 162.56 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfe9d712-21d8-4836-a929-5c5d54744168")
 	)
 	(wire
 		(pts
@@ -4071,26 +4228,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 108.585) (xy 205.105 108.585)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7d99c5f-d525-4d8f-99b1-083ac36f87c5")
-	)
-	(wire
-		(pts
-			(xy 50.8 97.155) (xy 50.8 98.425)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9413fee-ee98-4eb2-9c10-96316966de46")
-	)
-	(wire
-		(pts
 			(xy 81.28 99.695) (xy 81.28 107.315)
 		)
 		(stroke
@@ -4159,6 +4296,36 @@
 		)
 		(uuid "392a1299-e07f-4263-a135-50c3312b39fa")
 	)
+	(label "VREF"
+		(at 86.36 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "46df7e3a-7665-4b0e-b369-2fa367ff0c93")
+	)
+	(label "VREF"
+		(at 158.115 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4a759cb1-c2e5-4ef3-b415-5f7b89c05534")
+	)
+	(label "VREF"
+		(at 196.215 108.585 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5d1cbbd9-5c72-4edb-94d4-f7c5a701702c")
+	)
 	(label "VCO_CONTROL"
 		(at 37.465 146.685 180)
 		(effects
@@ -4178,6 +4345,16 @@
 			(justify right bottom)
 		)
 		(uuid "e477ea8a-1be6-4bbb-94d6-9691ef9b45ab")
+	)
+	(label "VREF"
+		(at 106.045 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f81c7c8a-fab6-46e3-91d0-636bff7f4a7c")
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:VDC")
@@ -4583,166 +4760,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VAA")
-		(at 109.22 118.11 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13044633-eea9-47f9-a43e-0c4398d81e43")
-		(property "Reference" "#PWR013"
-			(at 113.03 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.5V"
-			(at 105.41 118.1099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VAA\""
-			(at 109.22 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "054aa30d-4007-4ff3-980d-a7525cf97222")
-		)
-		(instances
-			(project "71kHzTransmitter"
-				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 50.8 100.965 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "147453e0-4db0-4210-ac13-3b747acb8517")
-		(property "Reference" "C5"
-			(at 53.34 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47u"
-			(at 53.34 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 50.8 100.965 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 100.965 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor, small US symbol"
-			(at 50.8 100.965 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "481b11a7-9b90-4c46-a389-83121078908b")
-		)
-		(pin "1"
-			(uuid "703cde68-f9e5-4c9a-8518-65b44412d7fa")
-		)
-		(instances
-			(project "71kHzTransmitter"
-				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+9V")
 		(at 50.8 33.655 0)
 		(unit 1)
@@ -5010,7 +5027,7 @@
 			)
 		)
 		(property "Value" "4.7n"
-			(at 152.4 106.045 0)
+			(at 156.21 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5210,7 +5227,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "models/LM324_QUAD.lib"
+		(property "Sim.Library" "models/LM324_SIMPLE.lib"
 			(at 129.54 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5221,7 +5238,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "LM324_QUAD"
+		(property "Sim.Name" "LM324_SIMPLE"
 			(at 129.54 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5386,8 +5403,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VAA")
-		(at 86.36 99.695 270)
+		(lib_id "Device:Oscilloscope")
+		(at 115.57 66.675 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5396,20 +5413,20 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "395aeea3-3398-42dc-9e19-aacb96877370")
-		(property "Reference" "#PWR012"
-			(at 82.55 99.695 0)
-			(hide yes)
+		(uuid "33b7c709-73b2-4ed1-9498-d030a7747f48")
+		(property "Reference" "MES?"
+			(at 119.38 64.7064 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "4.5V"
-			(at 90.17 99.6949 90)
+		(property "Value" "Oscilloscope"
+			(at 119.38 67.2464 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5420,7 +5437,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 99.695 0)
+			(at 115.57 64.135 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5431,7 +5448,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 99.695 0)
+			(at 115.57 64.135 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5441,8 +5458,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VAA\""
-			(at 86.36 99.695 0)
+		(property "Description" "Oscilloscope"
+			(at 115.57 66.675 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5453,12 +5470,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "96721982-8451-4be6-89ae-9c6785585623")
+			(uuid "44c167c0-41b4-4d5d-ad5f-8c6d44009365")
+		)
+		(pin "2"
+			(uuid "154915e1-0bf9-478d-b9e4-0732ca182228")
 		)
 		(instances
 			(project "71kHzTransmitter"
 				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
-					(reference "#PWR012")
+					(reference "MES?")
 					(unit 1)
 				)
 			)
@@ -6334,7 +6354,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "models/LM324_QUAD.lib"
+		(property "Sim.Library" "models/LM324_SIMPLE.lib"
 			(at 24.13 90.805 0)
 			(hide yes)
 			(show_name no)
@@ -6345,7 +6365,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "LM324_QUAD"
+		(property "Sim.Name" "LM324_SIMPLE"
 			(at 24.13 90.805 0)
 			(hide yes)
 			(show_name no)
@@ -6656,7 +6676,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "models/LM324_QUAD.lib"
+		(property "Sim.Library" "models/LM324_SIMPLE.lib"
 			(at 73.66 99.695 0)
 			(hide yes)
 			(show_name no)
@@ -6667,7 +6687,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "LM324_QUAD"
+		(property "Sim.Name" "LM324_SIMPLE"
 			(at 73.66 99.695 0)
 			(hide yes)
 			(show_name no)
@@ -6746,6 +6766,88 @@
 			(project "71kHzTransmitter"
 				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 53.34 99.695 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b6b4353-2781-41d4-99d9-ab3b1ae1e0e1")
+		(property "Reference" "C5"
+			(at 55.88 97.9931 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47u"
+			(at 55.88 100.5331 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 99.695 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 99.695 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 53.34 99.695 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41e65a66-1fac-46ab-8b98-c62f0a19871b")
+		)
+		(pin "2"
+			(uuid "42f3de5b-4ad8-4ccf-8cc0-4a20a1970d38")
+		)
+		(instances
+			(project "71kHzTransmitter"
+				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7217,7 +7319,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "models/LM324_QUAD.lib"
+		(property "Sim.Library" "models/LM324_SIMPLE.lib"
 			(at 225.425 104.775 0)
 			(hide yes)
 			(show_name no)
@@ -7228,7 +7330,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "LM324_QUAD"
+		(property "Sim.Name" "LM324_SIMPLE"
 			(at 225.425 104.775 0)
 			(hide yes)
 			(show_name no)
@@ -7405,7 +7507,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf6b6b1f-6841-487d-8bc9-5bedc51467bc")
 		(property "Reference" "R1"
-			(at 90.805 154.3049 0)
+			(at 90.17 154.3049 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7415,8 +7517,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "39.46k"
-			(at 90.805 156.8449 0)
+		(property "Value" "49.7k"
+			(at 90.17 156.8449 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7701,85 +7803,6 @@
 			(project "71kHzTransmitter"
 				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VAA")
-		(at 160.655 110.49 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db5c81ae-2a1d-4dd3-82a0-8c98257d7ccb")
-		(property "Reference" "#PWR014"
-			(at 164.465 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.5V"
-			(at 156.845 110.4899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.655 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.655 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VAA\""
-			(at 160.655 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b9ca7f1a-327c-4359-a479-e612759d3f9a")
-		)
-		(instances
-			(project "71kHzTransmitter"
-				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -8090,7 +8113,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "models/LM324_QUAD.lib"
+		(property "Sim.Library" "models/LM324_SIMPLE.lib"
 			(at 180.975 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8101,7 +8124,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "LM324_QUAD"
+		(property "Sim.Name" "LM324_SIMPLE"
 			(at 180.975 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8181,85 +8204,6 @@
 				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
 					(reference "U2")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VAA")
-		(at 199.39 108.585 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef0c4de5-de23-4430-8681-25f248d3532c")
-		(property "Reference" "#PWR015"
-			(at 203.2 108.585 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.5V"
-			(at 195.58 108.5849 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 108.585 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 108.585 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VAA\""
-			(at 199.39 108.585 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "52bac565-d03d-4f0c-a21f-c76408bb33a8")
-		)
-		(instances
-			(project "71kHzTransmitter"
-				(path "/9d28fa65-b7fa-4b75-a49b-191561a10239"
-					(reference "#PWR015")
-					(unit 1)
 				)
 			)
 		)
@@ -8467,7 +8411,7 @@
 				)
 			)
 		)
-		(property "Sim.Params" "dc=0 ampl=10mV f=2k ac=1"
+		(property "Sim.Params" "dc=0 ampl=100mV f=1k ac=1"
 			(at 97.155 108.585 90)
 			(show_name no)
 			(do_not_autoplace no)

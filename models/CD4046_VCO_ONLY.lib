@@ -1,38 +1,32 @@
-.subckt CD4046_VCO_ONLY p1 p2 p3 p4 p5 p6 p7 p8
-+ p9 p10 p11 p12 p13 p14 p15 p16
-+ params: K=0.70574 ROUT=1000
-
-* Timing-resistor current follows control voltage.
+* Startup-corrected approximate CD4046 VCO-only model, 2026-10-17.
+* This is a behavioral approximation, not a manufacturer transistor-level model.
+* Original physical pin mapping and K/ROUT parameters are unchanged.
+* At DC/time=0, timing current and output are held at zero so ngspice can
+* solve the audio circuit's operating point. Oscillation is enabled after 1 ns.
+* Run a normal transient analysis with UIC/Use initial conditions DISABLED.
+* A DC operating point tests the audio bias; it cannot represent carrier pulses.
+* No external dependencies. No phase detectors or demodulator.
+* Tested in standalone ngspice 42: reference-buffer DC and reconstructed
+* transmitter transient; VCO 56.82/71.02/85.18 kHz at 3.6/4.5/5.4 V control,
+* with a 9 V supply, R1=49.7k, C=100p, and 1Meg output load.
+* Frequency accuracy depends on timestep and model calibration; bench-test hardware.
+*
+* Approximate CD4046 VCO ONLY. No phase detectors or demodulator.
+* Ports follow physical DIP pin numbers 1 through 16.
+* K calibrated to 71 kHz for 49.7k, 100p, VCOin=VDD/2.
+.subckt CD4046_VCO_ONLY p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 params: K=0.70574 ROUT=1000
 B_RBIAS rb p8 V={max(0,min(V(p9,p8),V(p16,p8)))}
 V_RSENSE rb p11 0
 R_RLEAK p11 p8 1T
 R_INPUT p9 p8 1G
 R_INHIBIT p5 p8 1G
-
-* External timing capacitor connects between p6 and p7.
 V_CREF p7 p8 0
 R_CLEAK p6 p7 1T
-
-* Hysteretic oscillator: thresholds at 25% and 75% of VDD.
-B_THRESH th p8 V={
-+ (V(p6,p7)-0.5*V(p16,p8))
-+ /max(0.25*V(p16,p8),0.01)}
-
+B_THRESH th p8 V={(V(p6,p7)-0.5*V(p16,p8))/max(0.25*V(p16,p8),0.01)}
 R_STATE p16 state 1k
 S_STATE state p8 th p8 SCHMITT
 .model SCHMITT SW(RON=1 ROFF=1T VT=0 VH=1)
-
-* Alternate capacitor charging and discharging.
-B_CHARGE p7 p6 I={
-+ (V(p5,p8)>0.5*V(p16,p8)) ? 0 :
-+ K*max(I(V_RSENSE),0)*
-+ ((V(state,p8)>0.5*V(p16,p8)) ? 1 : -1)}
-
-* VCO output; inhibit high forces output low.
-B_OUTPUT out p8 V={
-+ (V(p5,p8)>0.5*V(p16,p8)) ? 0 :
-+ ((V(state,p8)>0.5*V(p16,p8)) ? V(p16,p8) : 0)}
-
+B_CHARGE p7 p6 I={(time < 1n || V(p5,p8)>0.5*V(p16,p8)) ? 0 : K*max(I(V_RSENSE),0)*((V(state,p8)>0.5*V(p16,p8)) ? 1 : -1)}
+B_OUTPUT out p8 V={(time < 1n || V(p5,p8)>0.5*V(p16,p8)) ? 0 : ((V(state,p8)>0.5*V(p16,p8)) ? V(p16,p8) : 0)}
 R_OUTPUT out p4 {ROUT}
-
 .ends CD4046_VCO_ONLY
