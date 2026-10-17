@@ -425,7 +425,7 @@
         "uuid": "9d28fa65-b7fa-4b75-a49b-191561a10239"
       }
     ],
-    "used_designators": "V2,U2,SIM_PWR_FLG1,C4-7,JP1,R4-12,RV1-2,#PWR2-3,#PWR12-15",
+    "used_designators": "MES1,V2,U2,SIM_PWR_FLG1,C4-7,JP1,R4-12,RV1-2,#PWR2-3,#PWR12-15",
     "variants": []
   },
   "sheets": [
